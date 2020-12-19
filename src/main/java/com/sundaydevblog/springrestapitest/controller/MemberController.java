@@ -71,7 +71,7 @@ public class MemberController {
     }
 	
 	@GetMapping(value="/hello")
-    public String fetchAllMembers() {
+    public String sayHello() {
         return "Say hello";
     }
 }
