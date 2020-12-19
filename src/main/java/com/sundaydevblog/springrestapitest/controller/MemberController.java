@@ -69,4 +69,9 @@ public class MemberController {
                             "Member with ID: '" + id + "' not found."), HttpStatus.NOT_FOUND);
         }
     }
+	
+	@GetMapping(value="/hello")
+    public String fetchAllMembers() {
+        return "Say hello";
+    }
 }
