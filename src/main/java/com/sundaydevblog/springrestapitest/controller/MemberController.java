@@ -19,7 +19,7 @@ import java.util.Optional;
 public class MemberController {
 
     static String URI = "/api/members/";
-
+    //member service
     private final MemberService memberService;
 
     @Autowired
