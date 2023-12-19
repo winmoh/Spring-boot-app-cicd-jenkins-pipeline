@@ -27,6 +27,7 @@ public class MemberController {
         this.memberService = memberService;
     }
 
+    //get rest api
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Member> fetchAllMembers() {
         return memberService.getAllMembers();
