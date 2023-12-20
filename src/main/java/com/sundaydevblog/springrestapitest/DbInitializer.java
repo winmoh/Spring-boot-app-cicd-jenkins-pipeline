@@ -5,7 +5,7 @@ import com.sundaydevblog.springrestapitest.repository.MemberRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-// adding sme entries to database for testing purposes
+
 @Component
 public class DbInitializer implements CommandLineRunner {
 
