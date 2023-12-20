@@ -1,7 +1,8 @@
 package com.sundaydevblog.springrestapitest.entity;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
+import jakarta.persistence.*;
+
+
 
 @Entity
 @Table(name = "member")
@@ -12,11 +13,11 @@ public class Member {
     @Column(name = "member_id")
     private Long id;
 
-    @NotBlank
+
     @Column(unique = true, name = "name")
     private String name;
 
-    @NotBlank
+
     @Column(unique = true, name = "email")
     private String email;
 
