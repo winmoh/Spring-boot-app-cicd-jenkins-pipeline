@@ -28,13 +28,13 @@ public class MemberServiceImpl implements MemberService {
     public Optional<Member> getMemberById(long id) {
         return memberRepository.findById(id);
     }
-
+    //save a  member
     @Override
     public Member saveMember(Member member) {
         return memberRepository.save(member);
     }
 
-
+    //remove a member
     @Override
     public void removeMember(long id) {
         this.memberRepository.deleteById(id);
